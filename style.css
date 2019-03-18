@@ -1,0 +1,188 @@
+body {	
+	background-image: url(bilder/gray_sand.png); /* Hämtat från www.subtlepatterns.com */
+	font-family: "letter gothic std", Helvetica, sans-serif;
+}
+
+h2 {
+	padding-top: 2%;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h3 {
+	text-align: center;
+	font-size: 14px;
+}
+
+p {
+	font-size: 13px;
+	font-family: Helvetica, sans-serif;
+}
+
+
+/* Inställningar för wrappern som handhar allt material förutom den gråa bakgrundsbilden */
+#wrapper {
+	background-image: url(bilder/tattoo_skeleton_elk.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	max-width: 960px;
+	height:700px;
+	margin: auto;
+	box-shadow: 2px 2px 5px #151515;
+}
+
+
+
+
+
+/* Inställningar för menyn */
+nav {
+	background-color: #B1B3B7;
+	width: 200px;
+	height: 65%;
+	margin-left: 2%;
+	box-shadow: 2px 2px 5px #151515;
+	float:left;
+	position: relative;
+	font-size: 14px;
+}
+
+#logotype {
+	margin-top: 50%;
+	width: 95%;
+}
+
+
+ul {			/*Menylänkarna ligger i en lista med egna inställningar */
+	border-top: 1px solid #781819;
+	list-style-type: none;
+	text-align: center;	
+}
+
+li {
+	margin-left: -30%;
+	padding-top: 15%;
+}
+
+a:link{
+	color:#000000;
+	text-decoration: none;
+}
+
+a:visited{
+	color:#000000;
+	text-decoration: none;
+}
+a:hover{
+	color:#000000;
+	text-decoration: none;
+}
+a:active{
+	color:#000000;
+	text-decoration: none;
+}
+
+#chosen{			/* När man är inne på en sida blir det menynamnet rött med fet text */
+	color: #781819;
+	font-weight: bold;
+} 
+
+
+
+
+
+
+/* Inställningar för text och bildrutan på alla sidor utom startsidan*/
+#text{
+	background-color: #D3D4D6;
+	float: left;
+	width:50%;
+	height: 75%;
+	margin-top: 15%;
+	margin-left: 20%;
+	padding-left: 1%;
+	padding-right: 1%;
+	overflow:scroll;
+	box-shadow: 2px 2px 5px #151515;
+}
+
+
+.pictures{			/* bildinställningar för bilder på alla sidor utom portfolio och startsida */
+	width: 49%;
+}
+
+.portfolio {		/* bildinställningar för bilder på portfolio-sidan */
+	width: 32%;
+}
+
+
+
+
+/* MediaQueries - Inställningar för mobil */
+@media (max-width: 360px){
+	body{
+		margin:0px;
+	}
+
+	#wrapper {
+		background-image: none;
+		box-shadow: none;
+
+		
+	}
+	
+	nav {
+		width: 80%;
+		height: 42%;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+
+	
+
+	
+
+	#logotype {
+		margin-top: 2%;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 70%;
+
+	}
+
+	li {
+		padding-top: 5%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	/* Inställningar för text och bildrutan på alla sidor utom startsidan*/
+	#text{
+		width:70%; /**/
+		height: auto;
+		margin-top: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-left: 5%;
+		padding-right: 5%;
+		overflow:visible; /**/
+		
+	}
+
+
+	.pictures{			/* bildinställningar för bilder på alla sidor utom portfolio och startsida */
+		width: 100%;
+	}
+
+	.portfolio {		/* bildinställningar för bilder på portfolio-sidan */
+		width: 100%;
+	}
+
+	
+}
+
+
